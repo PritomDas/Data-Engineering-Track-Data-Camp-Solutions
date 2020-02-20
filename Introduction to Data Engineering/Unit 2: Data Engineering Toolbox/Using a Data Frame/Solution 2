@@ -1,0 +1,14 @@
+Task to complete:
+Print out the mean age for each Year. Remember dask uses lazy evaluation.
+
+Lazy Evaluation Concept:
+In a nutshell, lazy evaluation means that the object is evaluated when it is needed, not when it is created.
+
+*********************************************Solution Begins here*****************************************************
+import dask.dataframe as dd
+
+# Set the number of pratitions
+athlete_events_dask = dd.from_pandas(athlete_events, npartitions = 4)
+
+# Calculate the mean Age per Year
+print(athlete_events_dask.groupby('Year').Age.mean().compute())

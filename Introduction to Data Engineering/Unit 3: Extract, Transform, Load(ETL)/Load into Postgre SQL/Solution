@@ -1,0 +1,20 @@
+**************************************************Question*******************************************************************
+In this exercise, you'll write out some data to a PostgreSQL data warehouse. That could be useful when you have a result of some transformations, and you want to use it in an application.
+
+For example, the result of a transformation could have added a column with film recommendations, and you want to use them in your online store.
+
+There's a pandas DataFrame called film_pdf in your workspace.
+
+As a reminder, here's the structure of a connection URI for sqlalchemy:
+
+postgresql://[user[:password]@][host][:port][/database]
+******************************************************************************************************************************
+
+
+*****************************************************Tasks******************************************************************
+1)Complete the connection URI for to create the database engine. The user and password are repl and password respectively. The host is localhost, and the port is 5432. This time, the database is dwh.
+
+2)Finish the call so we use the "store" schema in the database. If the table exists, replace it completely.
+****************************************************************************************************************************
+
+

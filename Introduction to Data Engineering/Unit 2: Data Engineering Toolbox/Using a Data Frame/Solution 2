@@ -1,8 +1,20 @@
-Task to complete:
+********************************************Question Given************************************************************
+Using a DataFrame
+In the previous exercise, you saw how to split up a task and use the low-level python multiprocessing.Pool API to do calculations on several processing units.
+
+It's essential to understand this on a lower level, but in reality, you'll never use this kind of APIs. A more convenient way to parallelize an apply over several groups is using the dask framework and its abstraction of the pandas DataFrame, for example.
+
+The pandas DataFrame, athlete_events, is available in your workspace.
+****************************************************************************************************************************
+
+***************************************Task to complete************************************************************
 Print out the mean age for each Year. Remember dask uses lazy evaluation.
 
 Lazy Evaluation Concept:
 In a nutshell, lazy evaluation means that the object is evaluated when it is needed, not when it is created.
+*******************************************************************************************************************
+
+
 
 *********************************************Solution Begins here*****************************************************
 import dask.dataframe as dd

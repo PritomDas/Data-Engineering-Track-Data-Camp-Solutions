@@ -1,0 +1,1 @@
+Data Camp has user data loaded in a PostGre SQL database. I have to extract course ratings from each user and find out the highest course rating. Suggest the highest course rating to users. Also, this is a stream process as the course ratings can change and additionally new course ratings are given each day.

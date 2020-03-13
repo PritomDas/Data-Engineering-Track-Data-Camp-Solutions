@@ -1,0 +1,6 @@
+Question:
+
+So far, you've read Excel files one sheet at a time, which lets you you customize import arguments for each sheet. But if an Excel file has some sheets that you want loaded with the same parameters, you can get them in one go by passing a list of their names or indices to read_excel()'s sheet_name keyword. To get them all, pass None. You'll practice both methods to get data from fcc_survey.xlsx, which has multiple sheets of similarly-formatted data.
+
+pandas has been loaded as pd.
+*******************************************************************************************************

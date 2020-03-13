@@ -4,3 +4,51 @@ So far, you've read Excel files one sheet at a time, which lets you you customiz
 
 pandas has been loaded as pd.
 *******************************************************************************************************
+
+Instruction: 01
+Load both the 2016 and 2017 sheets by name with a list and one call to read_excel().
+********************************************************************************************************
+
+Starter Code: 01
+# Load both the 2016 and 2017 sheets by name
+all_survey_data = pd.read_excel("fcc_survey.xlsx",
+                                ____)
+
+# View the data type of all_survey_data
+print(type(all_survey_data))
+*******************************************************************************************************
+
+Solution: 01
+# Load both the 2016 and 2017 sheets by name
+all_survey_data = pd.read_excel("fcc_survey.xlsx",
+                                sheet_name=['2016', '2017'])
+
+# View the data type of all_survey_data
+print(type(all_survey_data))
+*******************************************************************************************************
+
+Instruction: 02
+Load the 2016 sheet by its position (0) and 2017 by name. Note the sheet names in the result.
+******************************************************************************************************
+
+Solution: 02
+# Load all sheets in the Excel file
+all_survey_data = pd.read_excel("fcc_survey.xlsx",
+                            sheet_name=[0,"2017"])
+
+# View the sheet names in all_survey_data
+print(all_survey_data.keys())
+*******************************************************************************************************
+
+Instruction: 03
+Load all sheets in the Excel file without listing them all.
+*******************************************************************************************************
+
+Solution: 03
+# Load all sheets in the Excel file
+all_survey_data = pd.read_excel("fcc_survey.xlsx",
+                                sheet_name=None)
+
+# View the sheet names in all_survey_data
+print(all_survey_data.keys())
+********************************************************************************************************
